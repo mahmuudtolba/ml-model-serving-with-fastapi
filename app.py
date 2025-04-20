@@ -109,6 +109,3 @@ def pose_classifier(data: ImageDataInput):
                            prediction_time=prediction_time)
     
     return output
-
-if __name__=="__main__":
-    uvicorn.run(app="app:app", port=8502, reload=True, host="0.0.0.0")
